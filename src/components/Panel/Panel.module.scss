@@ -1,0 +1,55 @@
+.panel {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.currencies {
+	display: flex;
+}
+
+.currency {
+	width: 25%;
+	height: 30px;
+	background-color: transparent;
+	text-align: center;
+	border: 1px solid #F0F0F0;
+	cursor: pointer;
+	transition: all 0.1s ease 0s;
+
+	&:first-child {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+
+	&:last-child {
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
+	&:hover {
+		background-color: #F0F0F0;
+	}
+
+	&.active {
+		background-color: #54BAB9;
+	}
+}
+
+.input {
+	padding: 0 5px;
+	border: 1px solid #F0F0F0;
+	border-radius: 5px;
+	font-size: 20px;
+	line-height: 3;
+
+	&:focus {
+		outline: 1px solid #d8d8d8;
+		border: 1px solid #fff;
+	}
+
+	&::placeholder {
+		color: rgba(0, 0, 0, 0.3);
+	}
+}

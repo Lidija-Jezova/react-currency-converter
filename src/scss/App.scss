@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+button,
+input {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 500;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.App {
+	width: 100vw;
+	height: 100vh;
+	background-color: #F7ECDE;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	min-width: 500px;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 20px;
+	display: flex;
+	gap: 30px;
+}
